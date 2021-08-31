@@ -23,7 +23,7 @@ class PeopleViewController: UIViewController {
         
         peopleCollView.dataSource = self
         peopleCollView.delegate = self
-        obj.getPeopleEyes(forCount: peopleCount) { peopleData in
+        sdkManager.getPeopleEyes(forCount: peopleCount) { peopleData in
             
             DispatchQueue.main.async {
                 self.peopleData = peopleData

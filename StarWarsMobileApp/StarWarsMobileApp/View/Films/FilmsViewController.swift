@@ -33,7 +33,7 @@ class FilmsViewController: UIViewController {
     }
     
     func getFilmsData() {
-        obj.getAllFilms { response in
+        sdkManager.getAllFilms { response in
             
             DispatchQueue.main.async {
                 if let _ = response {

@@ -33,7 +33,7 @@ class PlanetsViewController: UIViewController {
     }
     
     func getPlanetsData() {
-        obj.getPlanets(forCount: planetCount) { planetData in
+        sdkManager.getPlanets(forCount: planetCount) { planetData in
             
             DispatchQueue.main.async {
                 self.planetData = planetData
