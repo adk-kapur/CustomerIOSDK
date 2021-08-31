@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GD5-t8-eBv">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Star Wars Mobile App-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomePageController" customModule="StarWarsMobileApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Star Wars Mobile App" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WU3-ZP-fLr">
+                                <rect key="frame" x="10" y="168" width="394" height="65"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select options to explore more" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRZ-wO-sgp">
+                                <rect key="frame" x="10" y="273" width="394" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="pt0-hV-tZe">
+                                <rect key="frame" x="10" y="333.5" width="394" height="230"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VvX-JD-Ypf">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="50"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Arg-b7-hVX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                        <state key="normal" title="Films">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="yy5-tv-KQM" kind="show" id="YuF-SX-N8g"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNF-fp-hkP">
+                                        <rect key="frame" x="0.0" y="90" width="394" height="50"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="qvY-oh-PHV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                        <state key="normal" title="People">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="gBe-Ha-s9g" kind="show" id="tc0-GB-BoG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uim-G5-VfC">
+                                        <rect key="frame" x="0.0" y="180" width="394" height="50"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="FAa-W5-WfC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                        <state key="normal" title="Planets">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="WdU-L9-56z" kind="show" id="bmQ-dc-POD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pt0-hV-tZe" firstAttribute="width" secondItem="cRZ-wO-sgp" secondAttribute="width" id="0p2-f8-VE2"/>
+                            <constraint firstItem="cRZ-wO-sgp" firstAttribute="centerX" secondItem="WU3-ZP-fLr" secondAttribute="centerX" id="1ng-gf-9oq"/>
+                            <constraint firstItem="cRZ-wO-sgp" firstAttribute="top" secondItem="WU3-ZP-fLr" secondAttribute="bottom" constant="40" id="6Vy-kD-ILE"/>
+                            <constraint firstItem="cRZ-wO-sgp" firstAttribute="leading" secondItem="WU3-ZP-fLr" secondAttribute="leading" id="D2i-xy-Ynw"/>
+                            <constraint firstItem="pt0-hV-tZe" firstAttribute="top" secondItem="cRZ-wO-sgp" secondAttribute="bottom" constant="40" id="FfS-Vw-eAS"/>
+                            <constraint firstItem="pt0-hV-tZe" firstAttribute="centerX" secondItem="cRZ-wO-sgp" secondAttribute="centerX" id="Upk-nD-jKn"/>
+                            <constraint firstItem="cRZ-wO-sgp" firstAttribute="trailing" secondItem="WU3-ZP-fLr" secondAttribute="trailing" id="V5C-SG-4p2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WU3-ZP-fLr" secondAttribute="trailing" constant="10" id="Yj2-1p-6pe"/>
+                            <constraint firstItem="WU3-ZP-fLr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="j9p-g9-CGF"/>
+                            <constraint firstItem="WU3-ZP-fLr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jBI-HY-ABo"/>
+                            <constraint firstItem="WU3-ZP-fLr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="qvE-4c-OYv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Star Wars Mobile App" id="NAS-do-eOq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="937.68115942028987" y="10.714285714285714"/>
+        </scene>
+        <!--Films-->
+        <scene sceneID="f6J-Ei-0eo">
+            <objects>
+                <viewController id="yy5-tv-KQM" customClass="FilmsViewController" customModule="StarWarsMobileApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TpL-Jx-I7o">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zxU-Ko-6LQ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="separatorColor" systemColor="labelColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FilmsTableViewCell" id="ock-Xe-cz6" customClass="FilmsTableViewCell" customModule="StarWarsMobileApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="115"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ock-Xe-cz6" id="vzx-Bp-wdd">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="115"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vQJ-Ic-xee">
+                                                    <rect key="frame" x="30" y="11" width="354" height="84"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j24-1u-jJY">
+                                                            <rect key="frame" x="0.0" y="0.0" width="354" height="23.5"/>
+                                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release date" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qmR-eI-pia">
+                                                            <rect key="frame" x="0.0" y="33.5" width="354" height="20"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desc" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHe-MD-nsD">
+                                                            <rect key="frame" x="0.0" y="63.5" width="354" height="20.5"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="vQJ-Ic-xee" firstAttribute="leading" secondItem="vzx-Bp-wdd" secondAttribute="leadingMargin" constant="10" id="1vQ-CF-LT9"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="vQJ-Ic-xee" secondAttribute="trailing" constant="10" id="gqX-fi-oMa"/>
+                                                <constraint firstAttribute="bottom" secondItem="vQJ-Ic-xee" secondAttribute="bottom" constant="20" id="n9j-Fb-J9i"/>
+                                                <constraint firstItem="vQJ-Ic-xee" firstAttribute="top" secondItem="vzx-Bp-wdd" secondAttribute="topMargin" id="z2V-ac-GgX"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="filmOpenCrawl" destination="PHe-MD-nsD" id="MMt-28-eI6"/>
+                                            <outlet property="filmReleaseInfo" destination="qmR-eI-pia" id="5tZ-eI-2Wa"/>
+                                            <outlet property="filmTitle" destination="j24-1u-jJY" id="nYY-MQ-IOY"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ny0-UW-obW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ny0-UW-obW" firstAttribute="trailing" secondItem="zxU-Ko-6LQ" secondAttribute="trailing" id="bIt-7X-vvd"/>
+                            <constraint firstItem="zxU-Ko-6LQ" firstAttribute="top" secondItem="ny0-UW-obW" secondAttribute="top" id="rVW-5b-taM"/>
+                            <constraint firstItem="ny0-UW-obW" firstAttribute="bottom" secondItem="zxU-Ko-6LQ" secondAttribute="bottom" id="wSI-a7-2Ef"/>
+                            <constraint firstItem="zxU-Ko-6LQ" firstAttribute="leading" secondItem="ny0-UW-obW" secondAttribute="leading" id="y8W-lm-MAT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Films" id="Dls-AC-H6x"/>
+                    <connections>
+                        <outlet property="filmsTableView" destination="zxU-Ko-6LQ" id="97x-C0-ozA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0vG-7T-cZb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1719" y="-673"/>
+        </scene>
+        <!--People-->
+        <scene sceneID="iir-0O-pWG">
+            <objects>
+                <viewController id="gBe-Ha-s9g" customClass="PeopleViewController" customModule="StarWarsMobileApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CJZ-Gt-bs4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="oZB-gg-qrP">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pWi-nY-Kq5">
+                                    <size key="itemSize" width="242" height="131"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PeopleCollectionViewCell" id="nUa-w7-K79" customClass="PeopleCollectionViewCell" customModule="StarWarsMobileApp" customModuleProvider="target">
+                                        <rect key="frame" x="86" y="10" width="242" height="131"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="I6l-Lg-6nb">
+                                            <rect key="frame" x="0.0" y="0.0" width="242" height="131"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ex9-UK-pL9">
+                                                    <rect key="frame" x="10" y="10" width="222" height="23.5"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpl-x5-1Mh">
+                                                    <rect key="frame" x="10" y="43.5" width="222" height="21"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="mpl-x5-1Mh" firstAttribute="leading" secondItem="ex9-UK-pL9" secondAttribute="leading" id="04v-Ao-Tid"/>
+                                                <constraint firstItem="mpl-x5-1Mh" firstAttribute="top" secondItem="ex9-UK-pL9" secondAttribute="bottom" constant="10" id="24S-z1-L3X"/>
+                                                <constraint firstAttribute="trailing" secondItem="ex9-UK-pL9" secondAttribute="trailing" constant="10" id="3KN-xr-2nY"/>
+                                                <constraint firstItem="ex9-UK-pL9" firstAttribute="top" secondItem="I6l-Lg-6nb" secondAttribute="top" constant="10" id="Hrf-cY-gnb"/>
+                                                <constraint firstItem="mpl-x5-1Mh" firstAttribute="top" secondItem="ex9-UK-pL9" secondAttribute="bottom" constant="10" id="Pqb-VI-QAY"/>
+                                                <constraint firstItem="mpl-x5-1Mh" firstAttribute="trailing" secondItem="ex9-UK-pL9" secondAttribute="trailing" id="tg7-cG-rQj"/>
+                                                <constraint firstItem="ex9-UK-pL9" firstAttribute="leading" secondItem="I6l-Lg-6nb" secondAttribute="leading" constant="10" id="tgZ-RR-Nye"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="eyeColorText" destination="mpl-x5-1Mh" id="2Ms-fc-BwT"/>
+                                            <outlet property="nameTitle" destination="ex9-UK-pL9" id="7Z3-lf-hwc"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fru-6p-hsG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oZB-gg-qrP" firstAttribute="leading" secondItem="fru-6p-hsG" secondAttribute="leading" id="KiO-HL-nQm"/>
+                            <constraint firstItem="fru-6p-hsG" firstAttribute="trailing" secondItem="oZB-gg-qrP" secondAttribute="trailing" id="McV-4a-4dM"/>
+                            <constraint firstItem="oZB-gg-qrP" firstAttribute="top" secondItem="fru-6p-hsG" secondAttribute="top" id="ThK-fO-49e"/>
+                            <constraint firstItem="fru-6p-hsG" firstAttribute="bottom" secondItem="oZB-gg-qrP" secondAttribute="bottom" id="ZLQ-JN-eSd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="People" id="TDB-2x-3no">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="FsR-j9-2VB"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="peopleCollView" destination="oZB-gg-qrP" id="aDR-3R-Jz3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oxb-e1-RpY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1718.840579710145" y="10.714285714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jXw-6c-frN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GD5-t8-eBv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Lf-AW-Ht9">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="K9y-KR-mJj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UlG-vp-TNw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="27.536231884057973" y="10.714285714285714"/>
+        </scene>
+        <!--Planets-->
+        <scene sceneID="ZPj-J6-dal">
+            <objects>
+                <viewController id="WdU-L9-56z" customClass="PlanetsViewController" customModule="StarWarsMobileApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Iv5-YD-855">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="r2f-uv-D2B">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="separatorColor" systemColor="labelColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlanetsTableViewCell" id="edo-UJ-LCe" customClass="PlanetsTableViewCell" customModule="StarWarsMobileApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="115"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="edo-UJ-LCe" id="aDs-6g-Paq">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="115"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4Rl-Vw-eag">
+                                                    <rect key="frame" x="30" y="11" width="354" height="84"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Planet name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTi-h8-ZPc">
+                                                            <rect key="frame" x="0.0" y="0.0" width="354" height="23.5"/>
+                                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Population" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRu-WB-zrk">
+                                                            <rect key="frame" x="0.0" y="33.5" width="354" height="20"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Climate" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Mh-CQ-zb8">
+                                                            <rect key="frame" x="0.0" y="63.5" width="354" height="20.5"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="4Rl-Vw-eag" firstAttribute="top" secondItem="aDs-6g-Paq" secondAttribute="topMargin" id="XQk-ww-GOP"/>
+                                                <constraint firstItem="4Rl-Vw-eag" firstAttribute="leading" secondItem="aDs-6g-Paq" secondAttribute="leadingMargin" constant="10" id="bKB-yh-w4u"/>
+                                                <constraint firstAttribute="bottom" secondItem="4Rl-Vw-eag" secondAttribute="bottom" constant="20" id="bl2-If-rAW"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="4Rl-Vw-eag" secondAttribute="trailing" constant="10" id="vMb-0B-Ndx"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="climateText" destination="4Mh-CQ-zb8" id="xfz-XV-9Iu"/>
+                                            <outlet property="planetNameText" destination="KTi-h8-ZPc" id="SPB-9C-tUf"/>
+                                            <outlet property="populationText" destination="ZRu-WB-zrk" id="MOP-n9-tnt"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="s4d-jF-8pQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="s4d-jF-8pQ" firstAttribute="trailing" secondItem="r2f-uv-D2B" secondAttribute="trailing" id="5YS-Gm-AFL"/>
+                            <constraint firstItem="r2f-uv-D2B" firstAttribute="leading" secondItem="s4d-jF-8pQ" secondAttribute="leading" id="VYH-OB-PQx"/>
+                            <constraint firstItem="r2f-uv-D2B" firstAttribute="top" secondItem="s4d-jF-8pQ" secondAttribute="top" id="rdS-qG-lpB"/>
+                            <constraint firstItem="s4d-jF-8pQ" firstAttribute="bottom" secondItem="r2f-uv-D2B" secondAttribute="bottom" id="x6Q-px-Tjb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Planets" id="7pm-8l-arM"/>
+                    <connections>
+                        <outlet property="planetsTableView" destination="r2f-uv-D2B" id="cdS-eS-YhV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nhE-xe-2oD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1719" y="739"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

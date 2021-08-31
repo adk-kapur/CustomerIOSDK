@@ -1,0 +1,28 @@
+//
+//  FilmsTableViewCell.swift
+//  StarWarsMobileApp
+//
+//  Created by Amandeep Kaur on 29/08/21.
+//
+
+import UIKit
+
+class FilmsTableViewCell: UITableViewCell {
+
+    // MARK:- OUTLETS
+    @IBOutlet weak var filmOpenCrawl: UILabel!
+    @IBOutlet weak var filmReleaseInfo: UILabel!
+    @IBOutlet weak var filmTitle: UILabel!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
+    }
+
+}
