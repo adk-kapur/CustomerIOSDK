@@ -14,7 +14,7 @@ class PlanetsViewController: UIViewController {
     @IBOutlet weak var planetsTableView: UITableView!
     
     // MARK:- VARIABLES
-    let obj = CIOManager()
+    let sdkManager = CIOManager()
     let planetCount = 5
     var planetData : [Planet]?
     let reuseIdentifier = "PlanetsTableViewCell"

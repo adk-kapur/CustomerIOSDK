@@ -14,7 +14,7 @@ class PeopleViewController: UIViewController {
     @IBOutlet weak var peopleCollView: UICollectionView!
     
     // MARK:- VARIABLES
-    let obj = CIOManager()
+    let sdkManager = CIOManager()
     let peopleCount = 5
     var peopleData : [People]?
     

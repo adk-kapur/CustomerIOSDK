@@ -14,7 +14,7 @@ class FilmsViewController: UIViewController {
     @IBOutlet weak var filmsTableView: UITableView!
     
     // MARK:- VARIABLES
-    let obj = CIOManager()
+    let sdkManager = CIOManager()
     let reuseIdentifier = "FilmsTableViewCell"
     var filmsData : FilmsResponse? = nil
     
