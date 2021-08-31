@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Host</key>
+    <string>swapi.dev/api</string>
+    <key>Protocol</key>
+    <string>https</string>
+    <key>Endpoints</key>
+    <dict>
+        <key>getPeopleEndpoints</key>
+        <string>/people</string>
+        <key>getFilmsEndpoints</key>
+        <string>/films</string>
+        <key>getPlanetsEndpoints</key>
+        <string>/planets</string>
+    </dict>
+</dict>
+</plist>
