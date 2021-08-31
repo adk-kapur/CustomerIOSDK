@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,8 +22,9 @@
 		9646068926DBD6DA0049CC4C /* PeopleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9646068826DBD6DA0049CC4C /* PeopleCollectionViewCell.swift */; };
 		9646068E26DE12000049CC4C /* PlanetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9646068D26DE12000049CC4C /* PlanetsViewController.swift */; };
 		9646069026DE13320049CC4C /* PlanetsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9646068F26DE13320049CC4C /* PlanetsTableViewCell.swift */; };
+		9660B41926DE5D5B0090D87C /* CustomerioStarWars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9660B41626DE5D4D0090D87C /* CustomerioStarWars.framework */; };
+		9660B41A26DE5D5B0090D87C /* CustomerioStarWars.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9660B41626DE5D4D0090D87C /* CustomerioStarWars.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F78570C3F3E968CF036A0901 /* Pods_StarWarsMobileAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D245E9955938B721B07715 /* Pods_StarWarsMobileAppTests.framework */; };
-		F8D2E4C974D411688839951E /* Pods_StarWarsMobileApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6087F9D95F3967000CACFE /* Pods_StarWarsMobileApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,20 @@
 			remoteGlobalIDString = 961C551B26D91D2E00253BE4;
 			remoteInfo = StarWarsMobileApp;
 		};
+		9660B41526DE5D4D0090D87C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9660B41026DE5D4D0090D87C /* CustomerioStarWars.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 961C55A026D946EA00253BE4;
+			remoteInfo = CustomerioStarWars;
+		};
+		9660B41726DE5D4D0090D87C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9660B41026DE5D4D0090D87C /* CustomerioStarWars.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 961C55A926D946EA00253BE4;
+			remoteInfo = CustomerioStarWarsTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,6 +65,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				9660B41A26DE5D5B0090D87C /* CustomerioStarWars.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,6 +98,7 @@
 		9646068826DBD6DA0049CC4C /* PeopleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCollectionViewCell.swift; sourceTree = "<group>"; };
 		9646068D26DE12000049CC4C /* PlanetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsViewController.swift; sourceTree = "<group>"; };
 		9646068F26DE13320049CC4C /* PlanetsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsTableViewCell.swift; sourceTree = "<group>"; };
+		9660B41026DE5D4D0090D87C /* CustomerioStarWars.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CustomerioStarWars.xcodeproj; path = ../../CustomerioStarWars/CustomerioStarWars.xcodeproj; sourceTree = "<group>"; };
 		A4D245E9955938B721B07715 /* Pods_StarWarsMobileAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarWarsMobileAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2125F94442B2219A90B17F7 /* Pods-StarWarsMobileApp-StarWarsMobileAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWarsMobileApp-StarWarsMobileAppUITests.release.xcconfig"; path = "Target Support Files/Pods-StarWarsMobileApp-StarWarsMobileAppUITests/Pods-StarWarsMobileApp-StarWarsMobileAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E4A8616C019B4B66028BD458 /* Pods-StarWarsMobileAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWarsMobileAppTests.release.xcconfig"; path = "Target Support Files/Pods-StarWarsMobileAppTests/Pods-StarWarsMobileAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -93,7 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8D2E4C974D411688839951E /* Pods_StarWarsMobileApp.framework in Frameworks */,
+				9660B41926DE5D5B0090D87C /* CustomerioStarWars.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +171,7 @@
 		961C551E26D91D2E00253BE4 /* StarWarsMobileApp */ = {
 			isa = PBXGroup;
 			children = (
+				9660B41026DE5D4D0090D87C /* CustomerioStarWars.xcodeproj */,
 				9646067826DB8D080049CC4C /* View */,
 				961C551F26D91D2E00253BE4 /* AppDelegate.swift */,
 				961C552126D91D2E00253BE4 /* SceneDelegate.swift */,
@@ -229,6 +247,15 @@
 				9646068F26DE13320049CC4C /* PlanetsTableViewCell.swift */,
 			);
 			path = Planets;
+			sourceTree = "<group>";
+		};
+		9660B41126DE5D4D0090D87C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9660B41626DE5D4D0090D87C /* CustomerioStarWars.framework */,
+				9660B41826DE5D4D0090D87C /* CustomerioStarWarsTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +351,12 @@
 			mainGroup = 961C551326D91D2E00253BE4;
 			productRefGroup = 961C551D26D91D2E00253BE4 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9660B41126DE5D4D0090D87C /* Products */;
+					ProjectRef = 9660B41026DE5D4D0090D87C /* CustomerioStarWars.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				961C551B26D91D2E00253BE4 /* StarWarsMobileApp */,
@@ -332,6 +365,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9660B41626DE5D4D0090D87C /* CustomerioStarWars.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CustomerioStarWars.framework;
+			remoteRef = 9660B41526DE5D4D0090D87C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9660B41826DE5D4D0090D87C /* CustomerioStarWarsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CustomerioStarWarsTests.xctest;
+			remoteRef = 9660B41726DE5D4D0090D87C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		961C551A26D91D2E00253BE4 /* Resources */ = {
