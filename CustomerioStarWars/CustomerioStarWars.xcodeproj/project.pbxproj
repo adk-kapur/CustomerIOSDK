@@ -17,14 +17,10 @@
 		9646069A26DE1EAF0049CC4C /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9646069926DE1EAF0049CC4C /* Config.plist */; };
 		9646069C26DE1EE60049CC4C /* CIONetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9646069B26DE1EE60049CC4C /* CIONetworkRouter.swift */; };
 		9646069E26DE1F170049CC4C /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9646069D26DE1F170049CC4C /* Config.swift */; };
-		964606A026DE1F2D0049CC4C /* CIOJSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9646069F26DE1F2D0049CC4C /* CIOJSONParameterEncoder.swift */; };
-		964606A226DE1F470049CC4C /* CIOParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964606A126DE1F470049CC4C /* CIOParameterEncoding.swift */; };
-		964606A426DE1F740049CC4C /* CIOURLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964606A326DE1F740049CC4C /* CIOURLParameterEncoder.swift */; };
 		964606A626DE1F910049CC4C /* CIOEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964606A526DE1F910049CC4C /* CIOEndPoints.swift */; };
 		964606A826DE1FA50049CC4C /* CIOStarWarsAPIEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964606A726DE1FA50049CC4C /* CIOStarWarsAPIEndPoints.swift */; };
 		964606AA26DE40AF0049CC4C /* CIOConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964606A926DE40AF0049CC4C /* CIOConstants.swift */; };
 		964606AC26DE40C60049CC4C /* CIONetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964606AB26DE40C60049CC4C /* CIONetworkHelper.swift */; };
-		964606AE26DE40E80049CC4C /* CIONetworkingExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964606AD26DE40E80049CC4C /* CIONetworkingExtensions.swift */; };
 		964606B026DE41030049CC4C /* CIONetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964606AF26DE41030049CC4C /* CIONetworkError.swift */; };
 		964606B226DE41210049CC4C /* CIOHTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964606B126DE41210049CC4C /* CIOHTTPHeaders.swift */; };
 		964606B426DE41370049CC4C /* CIOHTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964606B326DE41370049CC4C /* CIOHTTPMethod.swift */; };
@@ -54,14 +50,10 @@
 		9646069926DE1EAF0049CC4C /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 		9646069B26DE1EE60049CC4C /* CIONetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIONetworkRouter.swift; sourceTree = "<group>"; };
 		9646069D26DE1F170049CC4C /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
-		9646069F26DE1F2D0049CC4C /* CIOJSONParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIOJSONParameterEncoder.swift; sourceTree = "<group>"; };
-		964606A126DE1F470049CC4C /* CIOParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIOParameterEncoding.swift; sourceTree = "<group>"; };
-		964606A326DE1F740049CC4C /* CIOURLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIOURLParameterEncoder.swift; sourceTree = "<group>"; };
 		964606A526DE1F910049CC4C /* CIOEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIOEndPoints.swift; sourceTree = "<group>"; };
 		964606A726DE1FA50049CC4C /* CIOStarWarsAPIEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIOStarWarsAPIEndPoints.swift; sourceTree = "<group>"; };
 		964606A926DE40AF0049CC4C /* CIOConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIOConstants.swift; sourceTree = "<group>"; };
 		964606AB26DE40C60049CC4C /* CIONetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIONetworkHelper.swift; sourceTree = "<group>"; };
-		964606AD26DE40E80049CC4C /* CIONetworkingExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIONetworkingExtensions.swift; sourceTree = "<group>"; };
 		964606AF26DE41030049CC4C /* CIONetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIONetworkError.swift; sourceTree = "<group>"; };
 		964606B126DE41210049CC4C /* CIOHTTPHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIOHTTPHeaders.swift; sourceTree = "<group>"; };
 		964606B326DE41370049CC4C /* CIOHTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIOHTTPMethod.swift; sourceTree = "<group>"; };
@@ -150,22 +142,11 @@
 				9646069726DE1E960049CC4C /* Network Errors */,
 				9646069626DE1E8B0049CC4C /* Helpers */,
 				9646069526DE1E840049CC4C /* EndPoints */,
-				9646069426DE1E770049CC4C /* Encoding */,
 				9646069926DE1EAF0049CC4C /* Config.plist */,
 				9646069B26DE1EE60049CC4C /* CIONetworkRouter.swift */,
 				9646069D26DE1F170049CC4C /* Config.swift */,
 			);
 			path = Networking;
-			sourceTree = "<group>";
-		};
-		9646069426DE1E770049CC4C /* Encoding */ = {
-			isa = PBXGroup;
-			children = (
-				9646069F26DE1F2D0049CC4C /* CIOJSONParameterEncoder.swift */,
-				964606A126DE1F470049CC4C /* CIOParameterEncoding.swift */,
-				964606A326DE1F740049CC4C /* CIOURLParameterEncoder.swift */,
-			);
-			path = Encoding;
 			sourceTree = "<group>";
 		};
 		9646069526DE1E840049CC4C /* EndPoints */ = {
@@ -182,7 +163,6 @@
 			children = (
 				964606A926DE40AF0049CC4C /* CIOConstants.swift */,
 				964606AB26DE40C60049CC4C /* CIONetworkHelper.swift */,
-				964606AD26DE40E80049CC4C /* CIONetworkingExtensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -316,7 +296,6 @@
 			files = (
 				964606A626DE1F910049CC4C /* CIOEndPoints.swift in Sources */,
 				964606AA26DE40AF0049CC4C /* CIOConstants.swift in Sources */,
-				964606A226DE1F470049CC4C /* CIOParameterEncoding.swift in Sources */,
 				961C560A26D94B6300253BE4 /* CIOManager.swift in Sources */,
 				9646069226DE14C10049CC4C /* PlanetModel.swift in Sources */,
 				9646069C26DE1EE60049CC4C /* CIONetworkRouter.swift in Sources */,
@@ -327,9 +306,6 @@
 				961C560B26D94B6300253BE4 /* FilmsModel.swift in Sources */,
 				964606B026DE41030049CC4C /* CIONetworkError.swift in Sources */,
 				964606B426DE41370049CC4C /* CIOHTTPMethod.swift in Sources */,
-				964606A426DE1F740049CC4C /* CIOURLParameterEncoder.swift in Sources */,
-				964606AE26DE40E80049CC4C /* CIONetworkingExtensions.swift in Sources */,
-				964606A026DE1F2D0049CC4C /* CIOJSONParameterEncoder.swift in Sources */,
 				9646069E26DE1F170049CC4C /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

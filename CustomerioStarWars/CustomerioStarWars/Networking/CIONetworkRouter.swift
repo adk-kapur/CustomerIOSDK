@@ -77,7 +77,6 @@ class CIONetworkRouter<EndPoint: CIOEndPointType>: Router {
             return nil
         }
         var urlRequest = URLRequest(url: url)
-        urlRequest.cachePolicy = .reloadIgnoringLocalAndRemoteCacheData
         urlRequest.httpMethod = router.method.rawValue
         
         switch router.task {
