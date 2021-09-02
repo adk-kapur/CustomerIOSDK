@@ -1,5 +1,5 @@
 //
-//  HTTPMethod.swift
+//  CIOHTTPMethod.swift
 //  CustomerioStarWars
 //
 //  Created by Amandeep Kaur on 31/08/21.

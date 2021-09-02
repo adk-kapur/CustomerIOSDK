@@ -26,8 +26,8 @@
 		964606AC26DE40C60049CC4C /* CIONetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964606AB26DE40C60049CC4C /* CIONetworkHelper.swift */; };
 		964606AE26DE40E80049CC4C /* CIONetworkingExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964606AD26DE40E80049CC4C /* CIONetworkingExtensions.swift */; };
 		964606B026DE41030049CC4C /* CIONetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964606AF26DE41030049CC4C /* CIONetworkError.swift */; };
-		964606B226DE41210049CC4C /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964606B126DE41210049CC4C /* HTTPHeaders.swift */; };
-		964606B426DE41370049CC4C /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964606B326DE41370049CC4C /* HTTPMethod.swift */; };
+		964606B226DE41210049CC4C /* CIOHTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964606B126DE41210049CC4C /* CIOHTTPHeaders.swift */; };
+		964606B426DE41370049CC4C /* CIOHTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964606B326DE41370049CC4C /* CIOHTTPMethod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +63,8 @@
 		964606AB26DE40C60049CC4C /* CIONetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIONetworkHelper.swift; sourceTree = "<group>"; };
 		964606AD26DE40E80049CC4C /* CIONetworkingExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIONetworkingExtensions.swift; sourceTree = "<group>"; };
 		964606AF26DE41030049CC4C /* CIONetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIONetworkError.swift; sourceTree = "<group>"; };
-		964606B126DE41210049CC4C /* HTTPHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeaders.swift; sourceTree = "<group>"; };
-		964606B326DE41370049CC4C /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		964606B126DE41210049CC4C /* CIOHTTPHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIOHTTPHeaders.swift; sourceTree = "<group>"; };
+		964606B326DE41370049CC4C /* CIOHTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIOHTTPMethod.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,8 +198,8 @@
 		9646069826DE1E9E0049CC4C /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				964606B126DE41210049CC4C /* HTTPHeaders.swift */,
-				964606B326DE41370049CC4C /* HTTPMethod.swift */,
+				964606B126DE41210049CC4C /* CIOHTTPHeaders.swift */,
+				964606B326DE41370049CC4C /* CIOHTTPMethod.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -322,11 +322,11 @@
 				9646069C26DE1EE60049CC4C /* CIONetworkRouter.swift in Sources */,
 				964606A826DE1FA50049CC4C /* CIOStarWarsAPIEndPoints.swift in Sources */,
 				964606AC26DE40C60049CC4C /* CIONetworkHelper.swift in Sources */,
-				964606B226DE41210049CC4C /* HTTPHeaders.swift in Sources */,
+				964606B226DE41210049CC4C /* CIOHTTPHeaders.swift in Sources */,
 				9646068B26DBDD2F0049CC4C /* PeopleModel.swift in Sources */,
 				961C560B26D94B6300253BE4 /* FilmsModel.swift in Sources */,
 				964606B026DE41030049CC4C /* CIONetworkError.swift in Sources */,
-				964606B426DE41370049CC4C /* HTTPMethod.swift in Sources */,
+				964606B426DE41370049CC4C /* CIOHTTPMethod.swift in Sources */,
 				964606A426DE1F740049CC4C /* CIOURLParameterEncoder.swift in Sources */,
 				964606AE26DE40E80049CC4C /* CIONetworkingExtensions.swift in Sources */,
 				964606A026DE1F2D0049CC4C /* CIOJSONParameterEncoder.swift in Sources */,
